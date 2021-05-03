@@ -1,0 +1,20 @@
+# Query에 대한 Descriptions
+type Person {
+  id: Int!
+  name: String!
+  age: Int!
+  gender: String!
+}
+
+type Movie {
+  id: Int!
+  name: String!
+  score: Float!
+}
+
+type Query {
+  people: [Person]!
+  person(id: Int!): Person
+  movies: [Movie]!
+  movie(id: Int!): Movie
+}
